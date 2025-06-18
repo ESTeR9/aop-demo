@@ -1,8 +1,8 @@
 package com.example.aop.wannabeioc;
 
 import com.example.aop.annotations.Autowired;
-import com.example.aop.demo.MyService;
-import com.example.aop.demo.MyServiceInterface;
+import com.example.aop.core.MyService;
+import com.example.aop.core.MyServiceInterface;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;

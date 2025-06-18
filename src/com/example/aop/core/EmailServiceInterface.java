@@ -1,4 +1,4 @@
-package com.example.aop.demo;
+package com.example.aop.core;
 
 public interface EmailServiceInterface {
   void sendEmail(String email);
