@@ -1,6 +1,8 @@
 package com.example.aop.wannabeioc;
 
 import com.example.aop.annotations.Autowired;
+import com.example.aop.core.EmailService;
+import com.example.aop.core.EmailServiceInterface;
 import com.example.aop.core.MyService;
 import com.example.aop.core.MyServiceInterface;
 
@@ -16,6 +18,7 @@ public class DependencyInjector {
   // Register interface to implementation mapping .. this can also be done dynamically at app startup ... spring IOC does this
   static {
     interfaceToImpl.put(MyServiceInterface.class, MyService.class);
+    interfaceToImpl.put(EmailServiceInterface.class, EmailService.class);
   }
 
   public static <T> T getBean(Class<T> clazz) throws Exception {

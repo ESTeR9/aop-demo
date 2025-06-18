@@ -6,6 +6,9 @@ import com.example.aop.annotations.LogExecution;
 @Auditable
 public class EmailService implements EmailServiceInterface {
   //sendEmail method would just print email sent to email param
+  public EmailService() {
+  }
+
   @Override
   @LogExecution
   @Auditable

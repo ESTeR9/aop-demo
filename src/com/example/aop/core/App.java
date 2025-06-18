@@ -13,6 +13,9 @@ public class App {
     this.service = service;
   }
 
+  public App() {
+  }
+
   public void run() {
     Scanner scanner = new Scanner(System.in);
     while (true) {

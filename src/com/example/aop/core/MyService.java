@@ -10,6 +10,9 @@ public class MyService implements MyServiceInterface {
     this.emailService = emailService;
   }
 
+  public MyService(){
+  }
+
   @LogExecution
   public void process(@Validate String email) {
     emailService.sendEmail(email);
